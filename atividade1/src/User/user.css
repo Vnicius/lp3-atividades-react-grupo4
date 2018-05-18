@@ -1,0 +1,13 @@
+.p-title, .p-text {
+    display: inline-block;
+}
+
+.p-title {
+    font-size: 20px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.p-text {
+    font-size: 15pt;
+}

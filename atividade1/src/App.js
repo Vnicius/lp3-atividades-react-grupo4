@@ -57,6 +57,7 @@ class App extends Component {
       <div className="App">	
         <h1>Gerenciamento de Usuarios</h1>
 				<button onClick={ this.trataEvento}> Votar em todos </button>
+				<UserOutput name={this.state.userName} />
 				<Pessoa nome={this.state.pessoas[0].nome}
 					idade= {this.state.pessoas[0].idade }
 					voto = {this.state.pessoas[0].voto}  
@@ -69,8 +70,7 @@ class App extends Component {
 					voto = {this.state.pessoas[2].voto} />
 				<UserInput changeUserName={this.onChangeUserName.bind(this)} initiaState={this.state.userName}/>
 				<UserOutput name={this.state.userName} />
-				<UserOutput name={this.state.userName} />
-				<UserOutput name={this.state.userName} />
+				
       </div>
     );
   }

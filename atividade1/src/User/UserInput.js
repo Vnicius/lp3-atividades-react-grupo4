@@ -19,7 +19,7 @@ export default class UserInput extends Component {
   render() {
     return (
       <div>
-        <input type="text" value={this.state.userName} onChange={(event) => this.onChangeHandler(event)}/>
+        <input type="text" value={this.state.userName} onChange={this.onChangeHandler.bind(this)}/>
       </div>
     )
   }
